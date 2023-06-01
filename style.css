@@ -1,0 +1,74 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #D3CCE3, #E9E4F0);
+}
+.container{
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.container h2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+}
+
+.container h3{
+    text-align: center;
+    color: #DF8453;
+}
+#resultContainer{
+    line-height: 100px;
+    text-align: center;
+    color: burlywood;
+    font-size: larger;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+
+.catName{
+    width: 200px;
+    height: 100px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 5px 10px 18px burlywood;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+}
